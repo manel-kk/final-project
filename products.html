@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./products.css">
+    <script src="./products.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+  </head>
+<body>
+   <!--promotional pop-up message-->
+   <div class="popup" id="popup">
+    <p>Get 20% off your first Subscription!!</p>
+    <button class="popup-btn" onclick="closePopup()"><a href="https://popupsmart.com/london-popup-builder/#" target="_blank" class="text-link">Save Now</a></button></a>
+    </div> 
+  <div class="navbar">
+    <!--dropmenu here-->
+    <div class="overlay"></div> 
+    <nav class="nav">   
+       <div class="toggle">      
+           <span class="toggler">»</span></div>    
+       <div class="logo-1"><img src="./assets/dar-el-oula-low-resolution-logo-color-on-transparent-background.png"></div>
+       <ul>      
+           <li><a href="#product-list">All Products</a></li>      
+           <li><a href="#">Pastas and Doughs</a></li>      
+           <li><a href="#">Sweets/Snacks</a></li>      
+           <li><a href="#">Meat and Produce</a></li>      
+           <li><a href="#">Spices and Herbs</a></li>
+           <li><a href="trial.html">Plans and Subscriptions</a></li>
+           <hr>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="contact.html">Contact</a></li>    
+       </ul>  
+   </nav>
+   <!--second dropdown here-->
+   <div class="menu">
+    <ul>
+      <li><a href="Dar El Oula.html">Home</a></li>
+      <li><a href="#product-list">All</a>
+      <ul class="drop-1">
+      <li><a href="#product-list">Bicuits and breads</a></li>
+      <li><a href="#row">Produce</a></li>
+      <li><a href="#footer-distributed">Asian</a></li>
+    </ul>
+      </li>
+      <li><a href="#footer-distributed">Specials</a>
+      <ul class="drop-1">
+      <li><a href="#nav">Home-made</a></li>
+      <li><a href="#nav">Jams and Spreads</a></li>
+      <li><a href="#product-list">Delivery</a></li>
+    </ul>
+      </li>
+      <li id="cart"><a href="cart.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA7UlEQVRIS2NkoDFgpLH5DMRa4AB0SD4QKwCxABBfAOJGKI3XjcRYUAA0oR5qMLphhUCBCfhsIGSBAVDzfqgBIBcfAOIPQBwAxP1QcUeoOFZ7CFmwHmoYyPAGNBNAPgNZsgGIA3H5gpAF96HhrgikH6AZAoqL91AfCZJrwX+oRlwOISSPkYpgQYI3ZRCQBMUTKF7AAN1lMBdRYgGKubgsgIkTCgJ0eQz1A24BqUFFsg9GLcCZTAnlcFxBNxoHBBMVwSCClZ4ETcKjAFTbGeIqixyAEvOhRTQ5loAKuoVAvACXBeQYilcPucmRaIcAANdmNBkOOlZEAAAAAElFTkSuQmCC"/>Cart</a></li>
+    </ul>
+    </div>
+  </div>
+  <!--promotional catalogue-->
+  <div class="top-banner">
+    <h3>This week's catalogue</h3>
+    <div class="slide-left">
+      <div class="slide-image"><h4>Fresh Produce</h4>
+      <img src="./assets/banner-many-varied-colored-fresh-260nw-1705707208.jpg">
+      <p>$2 only</p>
+      </div>
+    </div>
+    <div class="slide-right"><h4>Bread and Cakes</h4><img src="./assets/bread.jpeg">
+      <p>$2 only</p>
+    </div>
+    <div class="slide-left">
+      <img src="./assets/Banner-5.jpg">
+      <p>$2 only</p>
+    </div>
+    <div class="slide-right"><h4>Spices and Herbs</h4><img src="./assets/banner-spice.jpg">
+      <p>$2 only</p>
+    </div>
+  </div>
+ 
+  <!--section for product list-->
+<div id="product-list" class="product-list">
+  <div class="row">
+    <div class="product-header1">
+    <h2>Italian</h2>
+    <p>Browse your favourie Italian items here</p>
+    </div>
+    <div class="wrapper">
+   
+    <div class="product-item">
+    <div class="details">
+      <div class="product"> <img src="./assets/Pasta-barilla.jpg" alt="">
+          <ul class="icons-list">
+              <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+              <li class="icon"><span class="far fa-heart"></span></li>
+              <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+          </ul>
+      </div>
+      <div class="title pt-4 pb-1">pasta</div>
+     
+      <div class="d-flex align-content-center justify-content-center"> 
+          <span class="fas fa-star star-icon" id="star1"></span> 
+          <span class="fas fa-star star-icon" id="star2"></span>
+          <span class="fas fa-star star-icon" id="star3"></span>
+          <span class="fas fa-star star-icon" id="star4"></span>
+          <span class="fas fa-star star-icon" id="star5"></span>
+      </div>
+      <div class="price">400</div>
+    </div>
+  </div>
+  <div class="details">
+    <div class="product"> <img src="./assets/cheese.jpg" alt="">
+        <ul class="icons-list">
+            <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+            <li class="icon"><span class="far fa-heart"></span></li>
+            <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+        </ul>
+    </div>
+    <div class="title pt-4 pb-1">pasta</div>
+   
+    <div class="d-flex align-content-center justify-content-center"> 
+        <span class="fas fa-star star-icon" id="star1"></span> 
+        <span class="fas fa-star star-icon" id="star2"></span>
+        <span class="fas fa-star star-icon" id="star3"></span>
+        <span class="fas fa-star star-icon" id="star4"></span>
+        <span class="fas fa-star star-icon" id="star5"></span>
+    </div>
+    <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src="./assets/pasta-7jpg.jpg" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">pasta</div>
+ 
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src="./assets/pasta-tom.png" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">pasta</div>
+ 
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src="./assets/barilla-peosto2.jpeg" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">pasta</div>
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+    </div>
+  </div>
+  <div class="banner ">
+    <marquee class="css1"><h4>Grand Opening! Asian Food Aisle</h4></marquee>
+  </div>
+  <div class="scroll-section">
+    <div class="appear">
+  <div class="row">
+    <div class="product-header2">
+      <h2>Asian</h2>
+      <p>Your destination for all the delicacies of the east</p>
+      </div>
+      <div class="wrapper">
+    <div class="product-item">
+    <div class="details">
+      <div class="product"> <img src=".//assets/asian aisle/noodles-2.webp" alt="">
+          <ul class="icons-list">
+              <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+              <li class="icon mx-3"><span class="far fa-heart"></span></li>
+              <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+          </ul>
+      </div>
+      <div class="title pt-4 pb-1">Koren Ramyun</div>
+     
+      <div class="d-flex align-content-center justify-content-center"> 
+          <span class="fas fa-star star-icon" id="star1"></span> 
+          <span class="fas fa-star star-icon" id="star2"></span>
+          <span class="fas fa-star star-icon" id="star3"></span>
+          <span class="fas fa-star star-icon" id="star4"></span>
+          <span class="fas fa-star star-icon" id="star5"></span>
+      </div>
+      <div class="price">400</div>
+    </div>
+  </div>
+  <div class="details">
+    <div class="product"> <img src=".//assets/asian aisle/noodles-3.jpg" alt="">
+        <ul class="icons-list">
+            <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+            <li class="icon mx-3"><span class="far fa-heart"></span></li>
+            <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+        </ul>
+    </div>
+    <div class="title pt-4 pb-1">White Rice</div>
+   
+    <div class="d-flex align-content-center justify-content-center"> 
+        <span class="fas fa-star star-icon" id="star1"></span> 
+        <span class="fas fa-star star-icon" id="star2"></span>
+        <span class="fas fa-star star-icon" id="star3"></span>
+        <span class="fas fa-star star-icon" id="star4"></span>
+        <span class="fas fa-star star-icon" id="star5"></span>
+    </div>
+    <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src=".//assets/asian aisle/noodles-4.webp" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon mx-3"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">Cup Noodles</div>
+ 
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src=".//assets/asian aisle/noodles-5.jpg" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon mx-3"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">Banana Milk</div>
+ 
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src=".//assets/asian aisle/noodles-6webp.webp" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon mx-3"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">Korean Snacks</div>
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+</div>
+      </div>
+  </div>
+ 
+  <div class="row">
+    <div class="product-header3">
+      <h2>Breakfast and Snacks  </h2>
+      <p>Enjoy a Wide Selection of Natural and Greek Yogurts</p>
+      </div>
+      <div class="wrapper">
+    <div class="product-item">
+    <div class="details">
+      <div class="product"> <img src=".//assets/asian aisle/oreo_.webp" alt="">
+          <ul class="icons-list">
+              <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+              <li class="icon mx-3"><span class="far fa-heart"></span></li>
+              <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+          </ul>
+      </div>
+      <div class="title pt-4 pb-1">Vegan Oreo</div>
+     
+      <div class="d-flex align-content-center justify-content-center"> 
+          <span class="fas fa-star star-icon" id="star1"></span> 
+          <span class="fas fa-star star-icon" id="star2"></span>
+          <span class="fas fa-star star-icon" id="star3"></span>
+          <span class="fas fa-star star-icon" id="star4"></span>
+          <span class="fas fa-star star-icon" id="star5"></span>
+      </div>
+      <div class="price">400</div>
+    </div>
+  </div>
+  <div class="details">
+    <div class="product"> <img src=".//assets/asian aisle/oreao-3_480x360.jpg" alt="">
+        <ul class="icons-list">
+            <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+            <li class="icon mx-3"><span class="far fa-heart"></span></li>
+            <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+        </ul>
+    </div>
+    <div class="title pt-4 pb-1">Chobani Yogurt</div>
+   
+    <div class="d-flex align-content-center justify-content-center"> 
+        <span class="fas fa-star star-icon" id="star1"></span> 
+        <span class="fas fa-star star-icon" id="star2"></span>
+        <span class="fas fa-star star-icon" id="star3"></span>
+        <span class="fas fa-star star-icon" id="star4"></span>
+        <span class="fas fa-star star-icon" id="star5"></span>
+    </div>
+    <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src=".//assets/asian aisle/oreo-4_539x360.jpg" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon mx-3"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">pasta</div>
+ 
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src="./assets/pates-2.jpg" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon mx-3"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">pasta</div>
+ 
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+<div class="details">
+  <div class="product"> <img src="./assets/pates-4.jpg" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon mx-3"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">pasta</div>
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+  </div>
+  </div>
+</div>
+<div class="row">
+  <div class="product-header4">
+    <h2>Healthy</h2>
+    <p>Here Healthy Equals Tasty</p>
+    </div>
+    <div class="wrapper">
+  <div class="product-item">
+  <div class="details">
+    <div class="product"> <img src=".//assets/asian aisle/avo.jpg" alt="">
+        <ul class="icons-list">
+            <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+            <li class="icon mx-3"><span class="far fa-heart"></span></li>
+            <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+        </ul>
+    </div>
+    <div class="title pt-4 pb-1">pasta</div>
+   
+    <div class="d-flex align-content-center justify-content-center"> 
+        <span class="fas fa-star star-icon" id="star1"></span> 
+        <span class="fas fa-star star-icon" id="star2"></span>
+        <span class="fas fa-star star-icon" id="star3"></span>
+        <span class="fas fa-star star-icon" id="star4"></span>
+        <span class="fas fa-star star-icon" id="star5"></span>
+    </div>
+    <div class="price">400</div>
+  </div>
+</div>
+<div class="details">
+  <div class="product"> <img src=".//assets/asian aisle/avo-4jpg.jpg" alt="">
+      <ul class="icons-list">
+          <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+          <li class="icon mx-3"><span class="far fa-heart"></span></li>
+          <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+      </ul>
+  </div>
+  <div class="title pt-4 pb-1">pasta</div>
+ 
+  <div class="d-flex align-content-center justify-content-center"> 
+      <span class="fas fa-star star-icon" id="star1"></span> 
+      <span class="fas fa-star star-icon" id="star2"></span>
+      <span class="fas fa-star star-icon" id="star3"></span>
+      <span class="fas fa-star star-icon" id="star4"></span>
+      <span class="fas fa-star star-icon" id="star5"></span>
+  </div>
+  <div class="price">400</div>
+</div>
+<div class="details">
+<div class="product"> <img src=".//assets/asian aisle/avo-3_250x350.jpg" alt="">
+    <ul class="icons-list">
+        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+    </ul>
+</div>
+<div class="title pt-4 pb-1">pasta</div>
+
+<div class="d-flex align-content-center justify-content-center"> 
+    <span class="fas fa-star star-icon" id="star1"></span> 
+    <span class="fas fa-star star-icon" id="star2"></span>
+    <span class="fas fa-star star-icon" id="star3"></span>
+    <span class="fas fa-star star-icon" id="star4"></span>
+    <span class="fas fa-star star-icon" id="star5"></span>
+</div>
+<div class="price">400</div>
+</div>
+<div class="details">
+<div class="product"> <img src=".//assets/asian aisle/avo-2_1.jpeg" alt="">
+    <ul class="icons-list">
+        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+    </ul>
+</div>
+<div class="title pt-4 pb-1">pasta</div>
+
+<div class="d-flex align-content-center justify-content-center"> 
+    <span class="fas fa-star star-icon" id="star1"></span> 
+    <span class="fas fa-star star-icon" id="star2"></span>
+    <span class="fas fa-star star-icon" id="star3"></span>
+    <span class="fas fa-star star-icon" id="star4"></span>
+    <span class="fas fa-star star-icon" id="star5"></span>
+</div>
+<div class="price">400</div>
+</div>
+<div class="details">
+<div class="product"> <img src=".//assets/asian aisle/1607554896995.jpeg" alt="">
+    <ul class="icons-list">
+        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+        <li class="icon mx-3"><span class="far fa-heart"></span></li>
+        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+    </ul>
+</div>
+<div class="title pt-4 pb-1">pasta</div>
+<div class="d-flex align-content-center justify-content-center"> 
+    <span class="fas fa-star star-icon" id="star1"></span> 
+    <span class="fas fa-star star-icon" id="star2"></span>
+    <span class="fas fa-star star-icon" id="star3"></span>
+    <span class="fas fa-star star-icon" id="star4"></span>
+    <span class="fas fa-star star-icon" id="star5"></span>
+</div>
+<div class="price">400</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--popup cart item-->
+<div class="popup-cart" id="popup-cart">
+  <div class="cart-header">
+      <h2>Your Cart</h2>
+      <span class="close-cart" id="close-cart">&times;</span>
+  </div>
+  <ul id="cart-items" class="cart-items">
+      <!-- Cart items will be added dynamically here -->
+  </ul>
+  <div class="cart-buttons">
+      <button class="btn-remove-all" id="btn-remove-all">Remove All</button>
+      <button class="btn-go-to-cart" id="btn-go-to-cart">Go to Cart</button>
+  </div>
+</div>
+
+<!--footer content-->
+<footer id="footer-distributed" class="footer-distributed">
+
+  <div class="footer-left">
+
+    <img src="./assets/dar-el-oula-low-resolution-logo-color-on-transparent-background.png">
+
+    <p class="footer-links">
+      <a href="Dar El Oula.html" class="link-1">Home</a>
+      
+      <a href="#">Blog</a>
+    
+      <a href="#">Pricing</a>
+    
+      <a href="about.html">About</a>
+      
+      <a href="#">Faq</a>
+      
+      <a href="contact.html">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Dar El Oula © 2023</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <a href="https://www.google.com/maps" target="_blank"><p><span>Dar el Oula</span> 4050 Dar el Oula</p></a>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+1111.1111.1111</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">support@company.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About the company</span>
+      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+</body>
+</html>
